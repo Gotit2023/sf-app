@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap');
+--nav-h: 88px;@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap');
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -45,7 +45,7 @@
   --radius:    18px;
   --radius-md: 12px;
   --radius-sm: 8px;
-  --nav-h:     72px;
+  --nav-h:     88px;
 
   /* Shadows */
   --shadow-sm: 0 1px 3px rgba(10,34,24,.08);
@@ -81,7 +81,7 @@ body {
   flex: 1;
   overflow-y: auto;
   overflow-x: hidden;
-  padding-bottom: var(--nav-h);
+  padding-bottom: calc(var(--nav-h) + env(safe-area-inset-bottom));
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 }
