@@ -34,7 +34,7 @@ export function Dashboard({ store, onNavigate }) {
   }
 
   return (
-    <div className="screen">
+    <div className="screen" style={{overflowY:"scroll",WebkitOverflowScrolling:"touch"}}>
       {/* ── Hero Header ── */}
       <div className="hero-header">
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 20, position: 'relative', zIndex: 1 }}>

@@ -50,7 +50,7 @@ export function Settings({ store }) {
   }
 
   return (
-    <div className="screen">
+    <div className="screen" style={{overflowY:"scroll",WebkitOverflowScrolling:"touch"}}>
       {/* Header */}
       <div style={{
         background: 'linear-gradient(160deg, var(--g800), var(--g700))',
