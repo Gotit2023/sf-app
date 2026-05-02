@@ -21,7 +21,7 @@ export function Settings({ store }) {
       return
     }
     setAuthLoading(true)
-    setAuthError('')
+    setAuthError('')marginBottom: 120
     try {
       await signInWithMagicLink(email)
       setAuthSent(true)
