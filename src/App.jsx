@@ -64,7 +64,7 @@ export default function App() {
       )}
 
       {/* Screens */}
-      <div style={{ flex: 1, overflow: 'hidden', position: 'relative' }}>
+      <div style={{ flex: 1, overflow: 'visible', position: 'relative' }}>
         {screens[tab]}
       </div>
 

@@ -199,7 +199,7 @@ export function Settings({ store }) {
         )}
 
         {/* About */}
-        <div className="card fade-up" style={{ marginBottom: 24 }}>
+        <div className="card fade-up" style={{ marginBottom: 100 }}>
           <div style={{ padding: '20px 18px', textAlign: 'center' }}>
             <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 12 }}>
               <SFLogoDark size={40} />
