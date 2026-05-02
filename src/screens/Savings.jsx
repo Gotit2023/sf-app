@@ -109,7 +109,7 @@ export function Savings({ store }) {
         </div>
       </div>
 
-      <div style={{ padding: '16px 16px 0' }}>
+      <div style={{ padding: '10px 10px 0' }}>
 
         {msg && (
           <div style={{
@@ -121,7 +121,7 @@ export function Savings({ store }) {
 
         {/* Add money */}
         {adding ? (
-          <div className="card card-padded fade-up" style={{ marginBottom: 14 }}>
+          <div className="card card-padded fade-up" style={{ marginBottom: 8 }}>
             <div className="eyebrow" style={{ marginBottom: 12 }}>Quanto guardaste?</div>
             <input
               className="sf-input"
@@ -141,14 +141,14 @@ export function Savings({ store }) {
             </button>
           </div>
         ) : (
-          <button className="btn btn-primary fade-up" onClick={() => setAdding(true)} style={{ marginBottom: 14 }}>
+          <button className="btn btn-primary fade-up" onClick={() => setAdding(true)} style={{ marginBottom: 8 }}>
             + Guardar dinheiro
           </button>
         )}
 
         {/* Set goal */}
         {editGoal ? (
-          <div className="card card-padded fade-up" style={{ marginBottom: 14 }}>
+          <div className="card card-padded fade-up" style={{ marginBottom: 8 }}>
             <div className="eyebrow" style={{ marginBottom: 12 }}>Definir meta de poupança</div>
             <div style={{ display: 'flex', gap: 8, marginBottom: 12 }}>
               {GOALS.filter(g => g.multiplier).map(g => (
@@ -170,14 +170,14 @@ export function Savings({ store }) {
             <button className="btn btn-outline" onClick={() => setEditGoal(false)} style={{ marginTop: 8 }}>Cancelar</button>
           </div>
         ) : (
-          <button className="btn btn-outline fade-up" onClick={() => setEditGoal(true)} style={{ marginBottom: 14 }}>
+          <button className="btn btn-outline fade-up" onClick={() => setEditGoal(true)} style={{ marginBottom: 8 }}>
             ✏️ Alterar meta
           </button>
         )}
 
         {/* Why it matters */}
-        <div className="card card-padded fade-up" style={{ marginBottom: 14 }}>
-          <div className="eyebrow" style={{ marginBottom: 14 }}>Porque é importante</div>
+        <div className="card card-padded fade-up" style={{ marginBottom: 8 }}>
+          <div className="eyebrow" style={{ marginBottom: 8 }}>Porque é importante</div>
           {TIPS.map((t, i) => (
             <div key={i} style={{
               display: 'flex', gap: 12, alignItems: 'flex-start',
@@ -193,7 +193,7 @@ export function Savings({ store }) {
         {/* Monthly saving suggestion */}
         {user.income > 0 && (
           <div className="card fade-up" style={{
-            marginBottom: 24, background: 'linear-gradient(135deg,var(--g50),#fff)',
+            marginBottom: 100, background: 'linear-gradient(135deg,var(--g50),#fff)',
             border: '1px solid var(--g100)'
           }}>
             <div style={{ padding: '16px 18px' }}>
