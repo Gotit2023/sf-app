@@ -378,16 +378,3 @@ body {
 .empty-emoji { font-size: 48px; line-height: 1; }
 .empty-title { font-size: 18px; font-weight: 700; color: var(--text); }
 .empty-sub   { font-size: 14px; color: var(--muted); line-height: 1.5; }
-
-/* iPhone scroll and safe area fix */
-.screen {
-  overflow-y: scroll !important;
-  -webkit-overflow-scrolling: touch !important;
-  padding-bottom: calc(80px + env(safe-area-inset-bottom, 34px)) !important;
-}
-
-.bottom-nav {
-  flex-shrink: 0 !important;
-  padding-bottom: env(safe-area-inset-bottom, 20px) !important;
-  height: auto !important;
-}
