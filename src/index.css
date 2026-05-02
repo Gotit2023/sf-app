@@ -378,3 +378,5 @@ body {
 .empty-emoji { font-size: 48px; line-height: 1; }
 .empty-title { font-size: 18px; font-weight: 700; color: var(--text); }
 .empty-sub   { font-size: 14px; color: var(--muted); line-height: 1.5; }
+
+.screen { overflow-y: scroll !important; -webkit-overflow-scrolling: touch !important; }
