@@ -387,3 +387,36 @@ body {
 .screen {
   padding-bottom: calc(88px + env(safe-area-inset-bottom)) !important;
 }
+
+/* Fix all screens bottom padding */
+.screen > * {
+  padding-bottom: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  overflow: hidden;
+}
+
+.app {
+  height: 100vh;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.screen {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: calc(72px + env(safe-area-inset-bottom, 34px)) !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+.bottom-nav {
+  position: relative !important;
+  flex-shrink: 0;
+  padding-bottom: env(safe-area-inset-bottom, 34px) !important;
+  height: auto !important;
+}
